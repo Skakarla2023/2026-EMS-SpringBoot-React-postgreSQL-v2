@@ -27,6 +27,72 @@ This project focuses on building clean REST APIs, proper layered architecture, a
 - Database integration using JPA & Hibernate
 - Exception handling and validation
 
+## 📂 Project Structure
+
+```
+ems-v2
+│
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com.example.ems
+│   │   │       ├── config
+│   │   │       │   └── OpenApiConfig.java
+│   │   │       │ 
+│   │   │       ├── controller
+│   │   │       │   └── EmployeeController.java
+│   │   │       │   └── DepartmentController.java
+│   │   │       │ 
+│   │   │       ├── dto 
+│   │   │       │   └── DepartmentRequestDTO.java
+│   │   │       │   └── DepartmentResponseDTO.java
+│   │   │       │   └── DepartmentSummaryDTO.java
+│   │   │       │   └── EmployeeRequestDTO.java
+│   │   │       │   └── EmployeeResponseDTO.java
+│   │   │       │   └── EmployeeSummaryDTO.java
+│   │   │       │
+│   │   │       ├── entity
+│   │   │       │   └── Employee.java
+│   │   │       │   └── Department.java
+│   │   │       │
+│   │   │       ├── exception
+│   │   │       │   └── GlobalExceptionHandler.java
+│   │   │       │   └── ResourceNotFoundException.java
+│   │   │       │   └── ErrorResponse.java
+│   │   │       │   └── DuplicateResourceException.java
+│   │   │       │
+│   │   │       ├── repository
+│   │   │       │   └── EmployeeRepository.java
+│   │   │       │   └── DepartmentRepository.java
+│   │   │       │
+│   │   │       ├── service
+│   │   │       │   └── EmployeeService.java
+│   │   │       │   └── DepartmentService.java
+│   │   │       │   └── impl
+│   │   │       │   	└── EmployeeServiceImpl.java
+│   │   │       │   	└── DepartmentServiceImpl.java
+│   │   │       │   
+│   │   │       ├── util        
+│   │   │       │   └── MapperUtil.java
+│   │   │       │   └── PageResponse.java
+│   │   │       │
+│   │   │       └── Application.java
+│   │   │
+│   │   └── resources
+│   │       └── application.yml      
+│   │
+│   └── test
+│       └── java
+│           └── com.example.ems
+│               └── EmsV2ApplicationTests.java
+│
+├── pom.xml
+├── README.md
+└── .gitignore
+
+
+```
+
 
 ## 👩‍💻 Author
 Satwika Kakarla  
