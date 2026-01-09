@@ -7,7 +7,7 @@
 - Spring Boot
 - Spring Data JPA
 - Hibernate
-- REST APIs
+- REST APIs 
 - PostgreSQL 
 - Maven
 - Lombok
